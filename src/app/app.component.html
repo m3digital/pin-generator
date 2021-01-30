@@ -40,21 +40,22 @@
       <div class="col-6">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Click one of the following to begin:</h5>
-            <p class="card-text">{{ card.body }}</p>
+            <img
+              class="card-img-top"
+              src="https://www.mr-locks.com/wp-content/uploads/Samsung-Digital-Door-Lock-Installation.png"
+              alt="digital door lock"
+            />
+            <h5 class="card-title mt-4">Secret 4-Digit Pin #:</h5>
+
+            <app-random-number-display></app-random-number-display>
+
             <a
-              href="{{ card.cta1Href }}"
-              class="btn btn-primary btn-block"
-              title="{{ card.cta1Alt }}"
+              class="btn mx-auto my-3 btn-primary btn-block"
+              title="Reload Page"
+              (click)="locationReload()"
             >
-              {{ card.cta1 }}</a
-            >
-            <a
-              href="{{ card.cta2Href }}"
-              class="btn btn-secondary btn-block"
-              [title]="card.cta2Alt"
-              >{{ card.cta2 }}</a
-            >
+              Reload
+            </a>
           </div>
         </div>
       </div>

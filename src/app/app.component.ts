@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit, NgModule } from '@angular/core';
 export interface Card {
   id: number;
   title: string;
@@ -30,6 +29,11 @@ export interface IGame {
 })
 export class AppComponent {
   title = 'pin-generator';
+
+  locationReload() {
+    this.ngOnInit();
+  }
+
   card: Card = {
     id: 1,
     title: "Cyberpunk 2077 - 2020's Game of the Year?",
@@ -45,4 +49,8 @@ export class AppComponent {
     cta2Href: '#',
     cta2Alt: 'go to blank',
   };
+
+  constructor() {}
+
+  ngOnInit() {}
 }
