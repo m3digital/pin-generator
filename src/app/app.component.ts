@@ -40,7 +40,7 @@ export class AppComponent {
     body:
       "Cyberpunk 2077 gave fans worldwide the chance to compete in Night City and become a living legend. Stunning, next-gen graphics comhined with years of development make this 2020's viewer's choice game of the year",
     imgSrc:
-      'https://cdn.wccftech.com/wp-content/uploads/2020/12/Cyberpunk-2077-NVIDIA-GeForce-RTX-Official-PC-Benchmarks.png',
+      './assets/Cyberpunk-2077-NVIDIA-GeForce-RTX-Official-PC-Benchmarks.png',
     imgAlt: 'Cyberpunk 2077',
     cta1: 'Learn More',
     cta1Href: '#',
